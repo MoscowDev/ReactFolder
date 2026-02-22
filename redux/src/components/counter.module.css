@@ -1,0 +1,10 @@
+.wrapper{
+    background: plum;
+    color: rgb(28, 56, 214);
+   height: 500px;
+}
+.dom{
+    color: blue;
+    background-color: bisque;
+    border-color: aqua;
+}

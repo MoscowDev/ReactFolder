@@ -104,7 +104,7 @@ const BookList = () => {
 	    		<li>
 	    			<span className={styles.name}>The Master and the Margarita</span>
 	    			<span className={styles.delete}>delete</span>
-	    		</li>
+	    		</li> 
 	    	</ul> */}
 			</ul>
 	    </div>
@@ -115,5 +115,5 @@ const BookList = () => {
 
     </div>
     )
-};
+	} 	;
 export default BookList;

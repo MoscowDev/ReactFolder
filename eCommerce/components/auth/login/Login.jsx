@@ -47,7 +47,9 @@ const Login = () => {
 
         <div className={styles["signup-text"]}>
           Don't have an account?{" "}
-          <a href="#" className={styles["signup-link"]}>
+          <a href="/register" className={styles["signup-link"]}>
+           
+        
             Sign up
           </a>
         </div>

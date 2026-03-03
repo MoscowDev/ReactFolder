@@ -1,7 +1,30 @@
 import React from "react";
 import styles from "./register.module.css";
+import { Link } from "react-router";
+import { RegisterMock } from "../../mocks/RegisterMock";
 
 const Register = () => {
+
+  try{
+    RegisterMock({
+ 
+      fullName: "John Doe",
+      email: "john.doe@example.com",
+      password: "password123",
+      confirmPassword: "password123",
+      termsAccepted: true
+    
+    }).then((response) => {
+      
+      console.log("Mock registration response:", response);
+    });
+  } catch (error) {
+    console.error("Error during mock registration:", error);
+  }
+
+
+
+  
   return (
     <div className={styles["register-container"]}>
       <h2>Create Account</h2>
@@ -66,10 +89,12 @@ const Register = () => {
 
         <div className={styles["login-text"]}>
           Already have an account?{" "}
-          <a href="#" className={styles["login-link"]}>
+          <a href = ""><Link to = "/login">login</Link></a>
+          <a href="/login" className={styles["login-link"]}>
             Login
           </a>
         </div>
+        console.log("Register form submitted", formData);
       </form>
     </div>
   );
